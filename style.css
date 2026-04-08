@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #00b4d8;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+/* SECTION SPLIT */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    gap: 40px;
+}
+
+.split .text {
+    width: 50%;
+}
+
+.split .image {
+    width: 50%;
+}
+
+.split .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* REVERSE */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* TEXT */
+.text h4 {
+    color: #00b4d8;
+    margin-bottom: 10px;
+}
+
+.text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.box {
+    background: #1b263b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .split .text,
+    .split .image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+}
